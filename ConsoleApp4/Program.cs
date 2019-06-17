@@ -64,7 +64,7 @@ namespace Task2
             i = 0;
             size = n;
             lens[0, 0] = vals[0, 0];
-            for (i = 0; i < n; i++)
+            for (i = 0; i < n; i++)                                      // Read Input
             {
                 line = sr.ReadLine();
                 for (j = 0; j < n; j++)
@@ -75,9 +75,9 @@ namespace Task2
                 }
 
             }
-            SetLens();
-            BuildPath();
-            for (i = 0; i < n; i++)
+            SetLens();                                                  // Calculate short path
+            BuildPath();                                                // Write path
+            for (i = 0; i < n; i++)                                     // Write output
             {
                 for (j = 0; j < n; j++)
                     sw.Write(path[i, j]);
